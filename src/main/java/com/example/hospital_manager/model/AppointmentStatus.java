@@ -1,4 +1,7 @@
 package com.example.hospital_manager.model;
 
-public class AppointmentStatus {
+public enum AppointmentStatus {
+    SCHEDULED,
+    COMPLETED,
+    CANCELLED
 }
