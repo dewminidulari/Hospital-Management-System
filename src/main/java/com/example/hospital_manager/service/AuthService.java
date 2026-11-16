@@ -49,7 +49,7 @@ public class AuthService {
         String token = jwtService.generateToken(
                 org.springframework.security.core.userdetails.User.withUsername(user.getUsername())
                         .password(user.getPassword())
-                        .authorities("ROLE_" + user.name())
+                        .authorities("ROLE_" + user.getRole().name())
                         .build(),
                 user.getRole().name()
         );
