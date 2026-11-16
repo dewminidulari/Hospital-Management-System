@@ -1,4 +1,8 @@
 package com.example.hospital_manager.dto;
 
-public class UserResponse {
+public record UserResponse(
+        Long id,
+        String username,
+        String fullName,
+        String role) {
 }

@@ -1,4 +1,4 @@
 package com.example.hospital_manager.dto;
 
-public class LoginRequest {
+public record LoginRequest(String username, String password) {
 }
